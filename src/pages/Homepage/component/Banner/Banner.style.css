@@ -16,15 +16,39 @@
 }
 
 .banner-text-area{
-    width:36%;
+    width:50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 100%;
     padding: 2rem;
-
 }
 
 .banner-text-area >*{
     z-index: 2;
+    padding: 0.5rem;
+    /* width: 180%; */
+
+}
+
+.banner-text-area >h1, h3{
+    z-index: 2;
+    padding: 0.5rem;
+    font-family: 'HANAMDAUM';
+}
+
+
+@media screen and (max-width: 768px){
+    .banner-text-area{
+        width: 90%;
+    }
+
+}
+
+
+@font-face {
+    font-family: 'HANAMDAUM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
 }
