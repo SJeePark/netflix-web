@@ -3,7 +3,7 @@ import api from "../utils/api";
 
 
 const fetchPopularMovies=()=>{
-    return api.get(`/movie/top_rated`)
+    return api.get(`/movie/top_rated?language=ko-KR`)
 }
 
 export const useTopRatedMoviesQuery=()=>{

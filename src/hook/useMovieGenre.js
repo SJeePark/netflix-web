@@ -1,0 +1,15 @@
+import { useQuery } from "@tanstack/react-query"
+import api from "../utils/api"
+
+const fetchMovieGenre=()=>{
+    return api.get(`/genre/movie/list?language=ko-KR`)
+}
+
+export const useMovieGenreQuery=()=>{
+    return useQuery({
+        queryKey:['movie-genre'],
+        queryFn: fetchMovieGenre,
+        select:(result)=>result.data.genres, 
+        staleTime: 300000 //5분 staleTime은 자주 호출될 필요 없는 부분을 설정 시간동안 호출X
+    })
+}
