@@ -37,14 +37,14 @@ const AppLayout = () => {
           <Form className="d-flex" onSubmit={searchByKeyword}>
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="검색"
               className="me-2 custom-placeholder"
               aria-label="Search"
               value={keyword}
               onChange={(event)=>setKeyword(event.target.value)}
               style={{ background:'#303030', borderColor:'#454545', color:'white'}}
             />
-            <Button variant="outline-danger">Search</Button>
+            <Button variant="outline-danger" type="submit">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
