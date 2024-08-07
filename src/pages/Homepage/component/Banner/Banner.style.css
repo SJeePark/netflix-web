@@ -36,7 +36,7 @@
 
 }
 
-.banner-text-area >h1, h3{
+.banner-text-area >.title, h3{
     z-index: 2;
     padding: 0.5rem;
     font-family: 'HANAMDAUM';
@@ -49,7 +49,7 @@
     }
 
 
-    h1{
+    .title{
         font-size: 20px;
         margin-top: 15vh;
     }

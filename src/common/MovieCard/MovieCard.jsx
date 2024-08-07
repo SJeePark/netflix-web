@@ -7,6 +7,7 @@ const MovieCard = ({movie}) => {
 
   const {data:genreData}= useMovieGenreQuery() //data: ~ => data의 이름을 재정의
   
+  
   const showGenre=(genreIdList)=>{    //25행의 movie.genre_ids를 매개변수로 받아옴
     if(!genreData) return []          //만약 장르데이터가 없을 경우 빈 객체 return 
     const genreNameList = genreIdList.map((id)=>{   //genreIdList 장르의 이름들만 모아둔 list 생성
@@ -14,6 +15,7 @@ const MovieCard = ({movie}) => {
       return genreObj.name;
     })
     return genreNameList
+    
   }
 
   return (

@@ -20,7 +20,7 @@ const Banner = () => {
     className='banner'>
 
       <div className='text-white banner-text-area'>
-        <h1 style={{fontWeight:'bold',  fontSize:"60px"}}>{data?.results[num].title}</h1>
+        <p className='title' style={{fontWeight:'bold',  fontSize:"60px"}}>{data?.results[num].title}</p>
         <h3>{data?.results[num].original_title}</h3>
         <p style={{fontStyle:'italic'}}>{data?.results[num].overview}</p>
       </div>
